@@ -1,11 +1,15 @@
-import './App.css';
-import About from './components/About'
+import "./App.css";
+import About from "./components/About";
+import Nav from "./components/Nav";
 
 function App() {
   return (
-    <section className="body-margin">
-      <About></About>
-    </section>
+    <>
+      <Nav></Nav>
+      <section className="body-margin">
+        <About></About>
+      </section>
+    </>
   );
 }
 
