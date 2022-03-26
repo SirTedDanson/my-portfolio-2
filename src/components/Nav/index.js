@@ -1,6 +1,12 @@
 import React from "react";
 
-function Nav() {
+function Nav(props) {
+  const { projectSelected, setProjectSelected } = props;
+
+  function selection() {
+    setProjectSelected((prevState) => !prevState);
+  }
+
   return (
     <header>
       <h1>
@@ -9,16 +15,18 @@ function Nav() {
       <nav>
         <ul>
           <li>
-            <a href="#about-me">About Me</a>
+            <a href="#about-me" onClick={selection} >About Me</a>
           </li>
           <li>
-            <a href="#work">Work</a>
+            <a href="#work" onClick={selection}>
+              Work
+            </a>
           </li>
           <li>
             <a href="#contact-me">Contact Me</a>
           </li>
           <li>
-            <a href="./assets/pdf/Resume.pdf">Resume</a>
+            <a href="#resume">Resume</a>
           </li>
         </ul>
       </nav>
@@ -26,4 +34,4 @@ function Nav() {
   );
 }
 
-export default Nav
+export default Nav;
