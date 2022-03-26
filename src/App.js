@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import About from "./components/About";
 import Nav from "./components/Nav";
 import Project from "./components/Project";
+import ContactForm from "./components/Contact";
 import "./App.css";
 
 function App() {
@@ -20,19 +21,18 @@ function App() {
     },
   ]);
 
-  // const [currentProject, setCurrentProject] = useState(projects[0]);
-  const [projectSelected, setProjectSelected] = useState(false);
+  // const [projectSelected, setProjectSelected] = useState(false);
+  // const [aboutSelected, setAboutSelected] = useState(false);
+  // const [contactSelected, setContactSelected] = useState(false);
+  // const [resumeSelected, setResumeSelected] = useState(false);
 
   return (
     <>
-      <Nav
-        projects={projects}
-        setProjectSelected={setProjectSelected}
-        projectSelected={projectSelected}
-      ></Nav>
+      <Nav></Nav>
       <section className="body-margin">
-        {!projectSelected && <About></About>}
-        {projectSelected && <Project projects={projects}></Project>}
+        <About></About>
+        <Project projects={projects}></Project>
+        <ContactForm></ContactForm>
       </section>
     </>
   );

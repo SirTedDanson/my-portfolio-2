@@ -1,11 +1,20 @@
 import React from "react";
 
 function Nav(props) {
-  const { projectSelected, setProjectSelected } = props;
-
-  function selection() {
-    setProjectSelected((prevState) => !prevState);
-  }
+  const navItems = [
+    {
+      title: "About Me",
+    },
+    {
+      title: "Work",
+    },
+    {
+      title: "Contact Me",
+    },
+    {
+      title: "Resume",
+    },
+  ];
 
   return (
     <header>
@@ -14,20 +23,10 @@ function Nav(props) {
       </h1>
       <nav>
         <ul>
-          <li>
-            <a href="#about-me" onClick={selection} >About Me</a>
-          </li>
-          <li>
-            <a href="#work" onClick={selection}>
-              Work
-            </a>
-          </li>
-          <li>
-            <a href="#contact-me">Contact Me</a>
-          </li>
-          <li>
-            <a href="#resume">Resume</a>
-          </li>
+          <li>About Me</li>
+          <li>Work</li>
+          <li>Contact Me</li>
+          <li>Resume</li>
         </ul>
       </nav>
     </header>

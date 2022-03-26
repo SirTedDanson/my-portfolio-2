@@ -1,3 +1,5 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
 :root {
   --background-color: #ece2d8;
   --text-color: #392f46;
@@ -66,9 +68,6 @@ header nav ul li {
   flex-wrap: wrap;
   padding: 20px;
   width: auto;
-}
-
-header nav ul li a {
   font-size: 24px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
