@@ -3,6 +3,7 @@ import About from "./components/About";
 import Nav from "./components/Nav";
 import Project from "./components/Project";
 import ContactForm from "./components/Contact";
+import Resume from "./components/Resume";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -51,7 +52,6 @@ function App() {
   ]);
 
   const [currentNavItem, setCurrentNavItem] = useState(navItems[0]);
-  // const [resumeSelected, setResumeSelected] = useState(false);
 
   return (
     <>
@@ -67,6 +67,7 @@ function App() {
           <Project projects={projects}></Project>
         )}
         {currentNavItem.name ==="Contact Me" && <ContactForm></ContactForm>}
+        {currentNavItem.name ==="Resume" && <Resume></Resume>}
       </section>
       <Footer></Footer>
     </>

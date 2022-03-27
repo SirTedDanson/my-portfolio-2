@@ -144,6 +144,7 @@ header nav ul li span:hover {
 }
 
 .about-me,
+.resume,
 .application-0,
 .application-1,
 .application-2,
@@ -341,6 +342,17 @@ header nav ul li span:hover {
   color: var(--text-color);
   text-shadow: none;
   text-decoration: underline var(--border-color-secondary) 5px;
+}
+
+/* RESUME SECTION STYLING */
+/* ------------------------------------------------------------------- */
+
+.resume {
+  width: 80%;
+  margin: 10px 30px;
+  padding: 20px;
+  text-align: left;
+  background-color: var(--primary-color);
 }
 
 /* RESPONSIVENESS STYLING START-------------LARGE SCREENS----------------------------------- */
