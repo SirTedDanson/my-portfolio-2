@@ -1,17 +1,10 @@
 import React, { useState } from "react";
 
 function Nav(props) {
-  const {
-    currentNavItem,
-    setCurrentNavItem,
-    navItems = [],
-  } = props;
+  const { currentNavItem, setCurrentNavItem, navItems = [] } = props;
 
   return (
     <header>
-      <h1>
-        <a href="https://sirteddanson.github.io/portfolio/">Matthew Dwyer</a>
-      </h1>
       <nav>
         <ul>
           {navItems.map((navItem) => (

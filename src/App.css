@@ -38,21 +38,15 @@ header {
   border-bottom: 3px double var(--border-color-secondary);
 }
 
-header h1 {
-  margin-top: 10px;
-  padding: 10px 60px;
+.media-content h1 {
+  font-size: 1rem;
+  padding: 10px;
   background-color: var(--primary-color);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border: 3px solid var(--border-color);
-  border-bottom-right-radius: 45px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 45px;
-  border-top-left-radius: 10px;
-  font-size: 32pt;
   font-weight: bolder !important;
 }
 
-header a {
+.media-content a {
   text-decoration: none;
   color: var(--text-color);
 }
@@ -73,7 +67,9 @@ header nav ul {
 header nav ul li {
   text-align: center;
   flex-wrap: wrap;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
   width: auto;
 }
 
@@ -146,14 +142,15 @@ header nav ul li span:hover {
 .about-me,
 .resume,
 .image,
-.contact-me {
+.contact-me,
+.media-content {
   border-color: var(--border-color);
   border-right: 3px solid var(--border-color);
   border-top: 3px solid var(--border-color);
   border-left: 10px solid var(--border-color);
   border-bottom: 6px solid var(--border-color);
-  border-bottom-right-radius: 45px;
-  border-top-right-radius: 10px;
+  border-bottom-right-radius: 45px !important;
+  border-top-right-radius: 10px !important;
 }
 
 /* ABOUT ME SECTION STYLING */
@@ -165,6 +162,10 @@ header nav ul li span:hover {
   padding: 20px;
   text-align: center;
   background-color: var(--primary-color);
+}
+
+.content {
+  display: inline-block;
 }
 
 /* WORK SECTION STYLING */
