@@ -6,9 +6,6 @@ function Footer() {
       <nav className="contact-me">
         <ul>
           <li>
-            <a href="tel:6143135809"><span><i class="fa fa-phone"></i></span></a>
-          </li>
-          <li>
             <a href="mailto:KnowledgeMED@gmail.com"><span><i class="fa fa-github"></i></span></a>
           </li>
           <li>
