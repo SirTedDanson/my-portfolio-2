@@ -248,6 +248,8 @@ header nav ul li a:hover {
 /* ------------------------------------------------------------------- */
 
 .card {
+  margin-top: 30px;
+  margin-bottom: 20px;
   width: 80%;
   background-color: var(--primary-color);
   border-color: var(--border-color);

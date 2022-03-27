@@ -6,14 +6,14 @@ function Footer() {
       <nav className="contact-me">
         <ul>
           <li>
-            <a href="mailto:KnowledgeMED@gmail.com"><span><i class="fa fa-github"></i></span></a>
+            <a href="mailto:KnowledgeMED@gmail.com"><span><i className="fa fa-github"></i></span></a>
           </li>
           <li>
-            <a href="https://github.com/SirTedDanson"><span><i class="fa fa-envelope"></i></span></a>
+            <a href="https://github.com/SirTedDanson"><span><i className="fa fa-envelope"></i></span></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/matthew-edward-dwyer/">
-            <span><i class="fa fa-linkedin"></i></span>
+            <span><i className="fa fa-linkedin"></i></span>
             </a>
           </li>
         </ul>

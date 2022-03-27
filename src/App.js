@@ -23,19 +23,25 @@ function App() {
     },
   ]);
 
-  // const [projectSelected, setProjectSelected] = useState(false);
-  // const [aboutSelected, setAboutSelected] = useState(false);
-  // const [contactSelected, setContactSelected] = useState(false);
+  const [projectSelected, setProjectSelected] = useState(false);
+  const [aboutSelected, setAboutSelected] = useState(true);
+  const [contactSelected, setContactSelected] = useState(false);
   // const [resumeSelected, setResumeSelected] = useState(false);
 
   return (
     <>
       <Header></Header>
-      <Nav></Nav>
+      <Nav
+        setProjectSelected={setProjectSelected}
+        setAboutSelected={setAboutSelected}
+        setContactSelected={setContactSelected}
+      ></Nav>
       <section className="body-margin">
-        <About></About>
-        <Project projects={projects}></Project>
-        <ContactForm></ContactForm>
+        {!projectSelected && !contactSelected && <About></About>}
+        {!aboutSelected && !contactSelected && (
+          <Project projects={projects}></Project>
+        )}
+        {!aboutSelected && !projectSelected && <ContactForm></ContactForm>}
       </section>
       <Footer></Footer>
     </>

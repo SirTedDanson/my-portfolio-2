@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Nav(props) {
-  // const navItems = [
-  //   {
-  //     title: "About Me",
-  //   },
-  //   {
-  //     title: "Work",
-  //   },
-  //   {
-  //     title: "Contact Me",
-  //   },
-  //   {
-  //     title: "Resume",
-  //   },
-  // ];
+
+  const { setProjectSelected, setAboutSelected, setContactSelected } = props;
+
+  function aboutMeSel() {
+    setAboutSelected(true);
+    setProjectSelected(false);
+    setContactSelected(false);
+  }
+
+  const workSel = function () {
+    setAboutSelected(false);
+    setProjectSelected(true);
+    setContactSelected(false);
+  }
+
+  function contactMeSel() {
+    setAboutSelected(false);
+    setProjectSelected(false);
+    setContactSelected(true);
+  }
 
   return (
     <header>
@@ -24,13 +30,19 @@ function Nav(props) {
       <nav>
         <ul>
           <li>
-            <a href="#about-me">About Me</a>
+            <a href="#about-me" onClick={aboutMeSel}>
+              About Me
+            </a>
           </li>
           <li>
-            <a href="#work">Work</a>
+            <a href="#work" onClick={workSel}>
+              Work
+            </a>
           </li>
           <li>
-            <a href="#contact-me">Contact Me</a>
+            <a href="#contact-me" onClick={contactMeSel}>
+              Contact Me
+            </a>
           </li>
           <li>
             <a href="./assets/pdf/Resume.pdf">Resume</a>
