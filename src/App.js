@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Project from "./components/Project";
 import ContactForm from "./components/Contact";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Project projects={projects}></Project>
         <ContactForm></ContactForm>
       </section>
+      <Footer></Footer>
     </>
   );
 }
