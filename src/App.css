@@ -77,15 +77,23 @@ header nav ul li {
   width: auto;
 }
 
-header nav ul li a {
+header nav ul li span:hover {
+  color: var(--text-color);
+  text-shadow: none;
+  text-decoration: underline var(--border-color-secondary) 5px;
+  cursor: pointer;
+}
+
+.navItem {
   font-size: 24px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-header nav ul li a:hover {
+.navActive {
   color: var(--text-color);
-  text-shadow: none;
+  text-shadow: none !important;
   text-decoration: underline var(--border-color-secondary) 5px;
+  cursor: pointer;
 }
 
 /* HERO STYLING */

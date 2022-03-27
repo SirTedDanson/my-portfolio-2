@@ -35,25 +35,38 @@ function App() {
     },
   ]);
 
-  const [projectSelected, setProjectSelected] = useState(false);
-  const [aboutSelected, setAboutSelected] = useState(true);
-  const [contactSelected, setContactSelected] = useState(false);
+  const [navItems] = useState([
+    {
+      name: "About",
+    },
+    { 
+      name: "Portfolio" 
+    },
+    { 
+      name: "Contact Me" 
+    },
+    {
+      name: "Resume",
+    },
+  ]);
+
+  const [currentNavItem, setCurrentNavItem] = useState(navItems[0]);
   // const [resumeSelected, setResumeSelected] = useState(false);
 
   return (
     <>
       <Header></Header>
       <Nav
-        setProjectSelected={setProjectSelected}
-        setAboutSelected={setAboutSelected}
-        setContactSelected={setContactSelected}
+        currentNavItem={currentNavItem}
+        setCurrentNavItem={setCurrentNavItem}
+        navItems={navItems}
       ></Nav>
       <section className="body-margin">
-        {!projectSelected && !contactSelected && <About></About>}
-        {!aboutSelected && !contactSelected && (
+        {currentNavItem.name ==="About" && <About></About>}
+        {currentNavItem.name ==="Portfolio" && (
           <Project projects={projects}></Project>
         )}
-        {!aboutSelected && !projectSelected && <ContactForm></ContactForm>}
+        {currentNavItem.name ==="Contact Me" && <ContactForm></ContactForm>}
       </section>
       <Footer></Footer>
     </>
