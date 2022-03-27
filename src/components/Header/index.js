@@ -1,16 +1,24 @@
 import React from "react";
+import Nav from "../Nav";
 
-function Header() {
+function Header(props) {
+  const { setCurrentNavItem, currentNavItem, navItems } = props;
   return (
-    <section id="hero" className="hero">
-      <div className="hero-quote">
-        <p>
-          “We are what we repeatedly do. 
-            Excellence, then, is not an act, 
-            but a habit” – Aristotle 
-        </p>
+    <header class="hero">
+      <div class="hero-body p-0">
+        <div class="container has-text-right">
+          <p class="subtitle hero-quote">
+            “We are what we repeatedly do. Excellence, then, is not an act, but
+            a habit” -Aristotle
+          </p>
+        </div>
       </div>
-    </section>
+      <Nav
+        currentNavItem={currentNavItem}
+        setCurrentNavItem={setCurrentNavItem}
+        navItems={navItems}
+      ></Nav>
+    </header>
   );
 }
 

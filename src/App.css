@@ -38,6 +38,33 @@ header {
   border-bottom: 3px double var(--border-color-secondary);
 }
 
+header nav ul {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  flex: 0 80%;
+  font-size: 24px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navItem a:hover {
+  color: var(--text-color) !important;
+  background-color: var(--background-color) !important;
+  text-shadow: none !important;
+  text-decoration: underline var(--border-color-secondary) 5px !important;
+  cursor: pointer !important;
+}
+
+.navActive a {
+  color: var(--text-color) !important;
+  text-shadow: none !important;
+  text-decoration: underline var(--border-color-secondary) 5px !important;
+  cursor: pointer !important;
+  border: none !important;
+}
+
 .media-content h1 {
   font-size: 1rem;
   padding: 10px;
@@ -51,63 +78,13 @@ header {
   color: var(--text-color);
 }
 
-header nav {
-  width: 100%;
-}
-
-header nav ul {
-  padding-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: center;
-  flex: 0 80%;
-}
-
-header nav ul li {
-  text-align: center;
-  flex-wrap: wrap;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  width: auto;
-}
-
-header nav ul li span:hover {
-  color: var(--text-color);
-  text-shadow: none;
-  text-decoration: underline var(--border-color-secondary) 5px;
-  cursor: pointer;
-}
-
-.navItem {
-  font-size: 24px;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.navActive {
-  color: var(--text-color);
-  text-shadow: none !important;
-  text-decoration: underline var(--border-color-secondary) 5px;
-  cursor: pointer;
-}
-
 /* HERO STYLING */
 /* ------------------------------------------------------------------- */
 
-.hero {
-  background-image: url("./assets/banner/hero-image-small.jpg");
-  background-size: cover;
-  background-position: center;
-  border-bottom: 3px solid var(--border-color-secondary);
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-}
-
 .hero-quote {
+  margin-top: 5rem;
   width: 40%;
-  margin: 170px 0px 15px 200px;
+  float: right;
   font-style: italic;
   font-weight: bold;
   text-align: right;
@@ -120,6 +97,12 @@ header nav ul li span:hover {
   border-bottom: 3px solid var(--border-color);
   border-bottom-left-radius: 45px;
   border-top-left-radius: 10px;
+}
+
+.hero-body {
+  background-image: url("/src/assets/banner/hero-image-small.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /* TITLE SECTION STYLING & MAIN BORDER STYLING */
@@ -338,34 +321,34 @@ header nav ul li span:hover {
 /* RESPONSIVENESS STYLING START-------------LARGE SCREENS----------------------------------- */
 
 /* Media query for 768px+ -----------Preliminary Large Screen Adjustment--------- */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   header nav ul {
     margin-left: 10%;
     margin-right: 10%;
     justify-content: space-between;
   }
-}
+} */
 
 /* Media query for 1200px+ ----------Primary Styling For Large Sceens------------*/
 @media screen and (min-width: 1200px) {
   /* HEADER STYLING ----------------- */
 
-  header h1 {
+  /* header h1 {
     padding: 10px 60px 10px 100px;
     font-size: 50px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border-left: none;
-  }
+  } */
 
-  .hero {
+  /* .hero {
     height: 500px;
-  }
+  } */
 
-  .hero-quote {
+  /* .hero-quote {
     border-right: 40px solid var(--primary-color);
     margin-top: 400px;
-  }
+  } */
 
   /* PRIMARY BODY SECTION STYLING ------------------------ */
   .body-margin {
@@ -416,10 +399,10 @@ header nav ul li span:hover {
     margin-right: 8%;
   }
 
-  header nav ul {
+  /* header nav ul {
     margin-left: 15%;
     margin-right: 15%;
-  }
+  } */
 }
 
 /* RESPONSIVENESS STYLING CONTINUE-------------SMALL SCREENS---------------------------- */
@@ -434,9 +417,9 @@ header nav ul li span:hover {
     font-size: 12px;
   }
 
-  header h1 {
+  /* header h1 {
     border-radius: 0;
-  }
+  } */
 
   .hero-quote {
     border: none;

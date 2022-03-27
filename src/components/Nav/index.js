@@ -4,28 +4,30 @@ function Nav(props) {
   const { currentNavItem, setCurrentNavItem, navItems = [] } = props;
 
   return (
-    <header>
-      <nav>
-        <ul>
-          {navItems.map((navItem) => (
-            <li
-              className={`navItem ${
-                currentNavItem.name === navItem.name && `navActive`
-              }`}
-              key={navItem.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentNavItem(navItem);
-                }}
+    <div className="hero-foot">
+      <nav className="tabs is-boxed is-fullwidth">
+        <div className="container">
+          <ul>
+            {navItems.map((navItem) => (
+              <li
+                className={`navItem ${
+                  currentNavItem.name === navItem.name && `navActive`
+                }`}
+                key={navItem.name}
               >
-                {navItem.name}
-              </span>
-            </li>
-          ))}
-        </ul>
+                <a
+                  onClick={() => {
+                    setCurrentNavItem(navItem);
+                  }}
+                >
+                  {navItem.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </nav>
-    </header>
+    </div>
   );
 }
 
