@@ -4,21 +4,30 @@ function Project(props) {
   const { projects = [] } = props;
 
   return (
-    <section id="work" className="section-row">
-      <div className="section-title">
-        <h2> Work </h2>
-      </div>
-      <section className="work-content">
-        {projects.map((project, i) => (
-          <div className={`application-${i}`} key={project.name}>
-            <a href={project.link}>
-              <div className="hover-effect"></div>
-              <h3 className="app-title">{project.name}</h3>
-            </a>
-          </div>
-        ))}
-      </section>
-    </section>
+        <section className="columns is-multiline is-justify-content-center work-content mt-4">
+          {projects.map((project, i) => (
+            <div className="column is-one-third image m-5" key={project.name}>
+              <img
+                className="image-image"
+                src={require(`../../assets/project-images/${project.name}.PNG`)}
+                alt={`${project}`}
+              />
+              <div className="image-overlay">
+                <a href={project.link}>
+                  <div className={`image-title app-${i}`}>{project.name}</div>
+                </a>
+                <a href={project.repo}>
+                  <p className="image-git">
+                    <span>
+                      <i className="fa fa-github github-icon"></i>
+                    </span>
+                    Repo
+                  </p>
+                </a>
+              </div>
+            </div>
+          ))}
+        </section>
   );
 }
 

@@ -145,12 +145,7 @@ header nav ul li span:hover {
 
 .about-me,
 .resume,
-.application-0,
-.application-1,
-.application-2,
-.application-3,
-.application-4,
-.application-5,
+.image,
 .contact-me {
   border-color: var(--border-color);
   border-right: 3px solid var(--border-color);
@@ -176,91 +171,65 @@ header nav ul li span:hover {
 /* ------------------------------------------------------------------- */
 
 .work-content {
-  width: 80%;
-  /* margin: 0px 20px 10px 40px; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  flex: 0 80%;
+  margin-right: 6% !important;
+  margin-left: 6% !important;
 }
 
-.application-0,
-.application-1,
-.application-2,
-.application-3,
-.application-4,
-.application-5 {
-  background-size: cover;
-  margin: 10px 0px 20px 0px;
+.image {
   position: relative;
+  overflow: hidden;
+  height: 250px;
+  line-height: 1;
+  padding: 0;
 }
 
-.application-0 {
-  background-image: url("../src/assets/project-images/Overseer.PNG");
-  background-position: top left;
-  height: 300px;
-  flex: 1 100%;
+.image-image {
+  width: auto !important;
+  max-width: none !important;
+  max-height: none !important;
 }
 
-.application-1 {
-  background-image: url("../src/assets/project-images/meal-express.PNG");
-  background-position: top left;
-  height: 300px;
-  flex: 1 100%;
-}
-
-.application-2 {
-  background-image: url("../src/assets/project-images/weather-dashboard.PNG");
-  background-position: top left;
-  height: 300px;
-  flex: 1 100%;
-}
-
-.application-3 {
-  background-image: url("../src/assets/project-images/note-taker.PNG");
-  background-position: top left;
-  height: 300px;
-  flex: 1 100%;
-}
-
-.application-4 {
-  background-image: url("../src/assets/project-images/code-quiz.PNG");
-  background-position: top left;
-  height: 300px;
-  flex: 1 100%;
-}
-
-.application-5 {
-  background-image: url("../src/assets/project-images/password-generator.PNG");
-  background-position: top left;
-  height: 300px;
-  flex: 1 100%;
-}
-
-.hover-effect {
+.image-overlay {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  height: 100%;
   width: 100%;
-  opacity: 1;
-  background-color: var(--highlight-color);
-  border-bottom-right-radius: 45px;
-  border-top-right-radius: 8px;
+  height: 100%;
+  background: var(--highlight-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
-.app-title {
+.image-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.5s;
+}
+
+.image-overlay:hover {
+  opacity: 1;
+}
+
+.image-overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image-title,
+.image-git {
+  font-size: 2em;
+  font-weight: bold;
   position: absolute;
   text-align: center;
   font-style: italic;
   font-weight: bold;
   padding: 10px 20px;
-  width: 50%;
-  top: 20%;
+  width: 80%;
   color: var(--text-color);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: var(--primary-color);
   border-right: 3px solid var(--border-color);
   border-top: 3px solid var(--border-color);
@@ -269,21 +238,32 @@ header nav ul li span:hover {
   border-top-right-radius: 10px;
 }
 
-.application-0 .app-title,
-.application-1 .app-title,
-.application-2 .app-title,
-.application-3 .app-title,
-.application-4 .app-title,
-.application-5 .app-title {
-  font-size: 20px;
+.app-1, .app-2, .app-5 {
+  top: -35px;
 }
 
-.work-content a:hover .hover-effect {
-  opacity: 0;
+.image-git {
+  font-size: 1em !important;
+  top: 51px;
+  width: 30%;
+  padding: 10 10px !important;
 }
 
-.application-secondary:hover .hover-effect {
-  opacity: 0;
+.github-icon {
+  font-size: 1.8rem;
+  padding-right: 10px;
+}
+
+.image-title:hover,
+.image-git:hover {
+  color: var(--text-color);
+  text-shadow: none;
+  text-decoration: underline var(--border-color-secondary) 5px;
+}
+
+.image-git {
+  font-size: 1.25em;
+  margin-top: 0.25em;
 }
 
 /* CONTACT ME SECTION STYLING */
@@ -314,7 +294,6 @@ header nav ul li span:hover {
 .contact-me {
   width: 80%;
   margin: 10px 30px;
-  padding: 20px;
   text-align: center;
   line-height: 2;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -332,7 +311,7 @@ header nav ul li span:hover {
 .contact-me a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 18.72px;
+  font-size: 2rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   color: var(--text-color);
   width: 10px;
