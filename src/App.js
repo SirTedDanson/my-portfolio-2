@@ -3,6 +3,7 @@ import About from "./components/About";
 import Nav from "./components/Nav";
 import Project from "./components/Project";
 import ContactForm from "./components/Contact";
+import Header from "./components/Header";
 import "./App.css";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <>
+      <Header></Header>
       <Nav></Nav>
       <section className="body-margin">
         <About></About>
