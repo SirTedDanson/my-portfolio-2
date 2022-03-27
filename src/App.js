@@ -21,6 +21,18 @@ function App() {
       name: "Weather Dashboard",
       link: "https://sirteddanson.github.io/weather-dashboard/",
     },
+    {
+      name: "Note Taker",
+      link: "https://thawing-spire-11710.herokuapp.com/",
+    },
+    {
+      name: "Code Quiz",
+      link: "https://sirteddanson.github.io/code-quiz/",
+    },
+    {
+      name: "Password Generator",
+      link: "https://sirteddanson.github.io/password-generator/",
+    },
   ]);
 
   const [projectSelected, setProjectSelected] = useState(false);

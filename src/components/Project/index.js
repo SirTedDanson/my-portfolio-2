@@ -9,8 +9,8 @@ function Project(props) {
         <h2> Work </h2>
       </div>
       <section className="work-content">
-        {projects.map((project) => (
-          <div className="application-main" key={project.name}>
+        {projects.map((project, i) => (
+          <div className={`application-${i}`} key={project.name}>
             <a href={project.link}>
               <div className="hover-effect"></div>
               <h3 className="app-title">{project.name}</h3>

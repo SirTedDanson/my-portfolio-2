@@ -136,9 +136,12 @@ header nav ul li a:hover {
 }
 
 .about-me,
-.application-main,
-.application-secondary,
-.application-tertiary,
+.application-0,
+.application-1,
+.application-2,
+.application-3,
+.application-4,
+.application-5,
 .contact-me {
   border-color: var(--border-color);
   border-right: 3px solid var(--border-color);
@@ -147,7 +150,6 @@ header nav ul li a:hover {
   border-bottom: 6px solid var(--border-color);
   border-bottom-right-radius: 45px;
   border-top-right-radius: 10px;
-  
 }
 
 /* ABOUT ME SECTION STYLING */
@@ -174,31 +176,57 @@ header nav ul li a:hover {
   flex: 0 80%;
 }
 
-.application-main,
-.application-secondary,
-.application-tertiary {
+.application-0,
+.application-1,
+.application-2,
+.application-3,
+.application-4,
+.application-5 {
   background-size: cover;
   margin: 10px 0px 20px 0px;
   position: relative;
 }
 
-.application-main {
+.application-0 {
   background-image: url("../src/assets/project-images/Overseer.PNG");
   background-position: top left;
   height: 300px;
   flex: 1 100%;
 }
 
-.application-secondary,
-.application-tertiary {
-  background-image: url("../src/assets/project-images/run-buddy-background.PNG");
-  background-position: center;
-  height: 150px;
-  flex: 1 50%;
+.application-1 {
+  background-image: url("../src/assets/project-images/meal-express.PNG");
+  background-position: top left;
+  height: 300px;
+  flex: 1 100%;
 }
 
-.application-tertiary {
-  background-image: url("../src/assets/project-images/horiseon-background.PNG");
+.application-2 {
+  background-image: url("../src/assets/project-images/weather-dashboard.PNG");
+  background-position: top left;
+  height: 300px;
+  flex: 1 100%;
+}
+
+.application-3 {
+  background-image: url("../src/assets/project-images/note-taker.PNG");
+  background-position: top left;
+  height: 300px;
+  flex: 1 100%;
+}
+
+.application-4 {
+  background-image: url("../src/assets/project-images/code-quiz.PNG");
+  background-position: top left;
+  height: 300px;
+  flex: 1 100%;
+}
+
+.application-5 {
+  background-image: url("../src/assets/project-images/password-generator.PNG");
+  background-position: top left;
+  height: 300px;
+  flex: 1 100%;
 }
 
 .hover-effect {
@@ -232,7 +260,12 @@ header nav ul li a:hover {
   border-top-right-radius: 10px;
 }
 
-.application-main .app-title {
+.application-0 .app-title,
+.application-1 .app-title,
+.application-2 .app-title,
+.application-3 .app-title,
+.application-4 .app-title,
+.application-5 .app-title {
   font-size: 20px;
 }
 
@@ -366,7 +399,12 @@ header nav ul li a:hover {
     font-size: 1.2vw;
   }
 
-  .application-main .app-title {
+  .application-0 .app-title,
+  .application-1 .app-title,
+  .application-2 .app-title,
+  .application-3 .app-title,
+  .application-4 .app-title,
+  .application-5 .app-title {
     font-size: 1.8vw;
   }
 }
