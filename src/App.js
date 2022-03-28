@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import About from "./components/About";
-import Nav from "./components/Nav";
 import Project from "./components/Project";
 import ContactForm from "./components/Contact";
 import Resume from "./components/Resume";
@@ -66,14 +65,15 @@ function App() {
         setCurrentNavItem={setCurrentNavItem}
         navItems={navItems}
       ></Header>
-      
-      {currentNavItem.name === "About" && <About></About>}
-      {currentNavItem.name === "Portfolio" && (
-        <Project projects={projects}></Project>
-      )}
-      {currentNavItem.name === "Contact Me" && <ContactForm></ContactForm>}
-      {currentNavItem.name === "Resume" && <Resume></Resume>}
-      <Footer></Footer>
+      <main className="body-margin">
+        {currentNavItem.name === "About" && <About></About>}
+        {currentNavItem.name === "Portfolio" && (
+          <Project projects={projects}></Project>
+        )}
+        {currentNavItem.name === "Contact Me" && <ContactForm></ContactForm>}
+        {currentNavItem.name === "Resume" && <Resume></Resume>}
+        <Footer></Footer>
+      </main>
     </>
   );
 }

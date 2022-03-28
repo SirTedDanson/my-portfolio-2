@@ -40,9 +40,80 @@ function ContactForm() {
 
   return (
     <>
-      <form className="section-row" id="contact-form" onSubmit={handleSubmit}>
-        <div className="card">
-          <div className="card-content">
+      {/* <section id="contact-me" className="section-row" >
+        <div className="section-title">
+          <h2> Contact Form </h2>
+        </div>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <div className="card">
+            <div className="card-content contact-me">
+              <div className="field">
+                <label className="label">Name</label>
+                <div className="control has-icons-left has-icons-right">
+                  <input
+                    className="input"
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                    defaultValue={name}
+                    onBlur={handleChange}
+                  />
+                  <span className="icon is-small is-left">
+                    <i className="fa fa-user"></i>
+                  </span>
+                </div>
+                <p className="help is-success"></p>
+              </div>
+
+              <div className="field">
+                <label className="label">Email</label>
+                <div className="control has-icons-left has-icons-right">
+                  <input
+                    className="input"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    defaultValue={email}
+                    onBlur={handleChange}
+                  />
+                  <span className="icon is-small is-left">
+                    <i className="fa fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+              <div className="field">
+                <label className="label">Message</label>
+                <div className="control">
+                  <textarea
+                    className="textarea"
+                    name="message"
+                    placeholder="Message"
+                    defaultValue={message}
+                    onBlur={handleChange}
+                  ></textarea>
+                </div>
+              </div>
+
+              <div className="field is-grouped">
+                <div className="control">
+                  <button className="button is-link">Submit</button>
+                </div>
+                <div className="control">
+                  <button className="button is-link is-light">Cancel</button>
+                </div>
+              </div>
+              {errorMessage && <p className="help is-danger">{errorMessage}</p>}
+            </div>
+          </div>
+        </form>
+      </section> */}
+
+      <section className="section-row">
+        <div className="section-title">
+          <h2> Contact Me </h2>
+        </div>
+        <div className="card-content contact-me">
+          <form className="contact-form" onSubmit={handleSubmit}>
             <div className="field">
               <label className="label">Name</label>
               <div className="control has-icons-left has-icons-right">
@@ -98,12 +169,10 @@ function ContactForm() {
                 <button className="button is-link is-light">Cancel</button>
               </div>
             </div>
-            {errorMessage && (
-                <p className="help is-danger">{errorMessage}</p>
-              )}
-          </div>
+            {errorMessage && <p className="help is-danger">{errorMessage}</p>}
+          </form>
         </div>
-      </form>
+      </section>
     </>
   );
 }

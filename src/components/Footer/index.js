@@ -2,11 +2,11 @@ import React from "react";
 
 function Footer() {
   return (
-    <section id="contact-me" className="section-row">
-      <nav className="contact-me">
+    <section id="footer" className="section-row">
+      <nav className="footer">
         <ul>
           <li>
-            <a href="mailto:KnowledgeMED@gmail.com"><span><i className="fa fa-envelope"></i></span></a>
+            <a href="https://www.twitch.tv/sirteddanson"><span><i className="fa fa-twitch"></i></span></a>
           </li>
           <li>
             <a href="https://github.com/SirTedDanson"><span><i className="fa fa-github"></i></span></a>

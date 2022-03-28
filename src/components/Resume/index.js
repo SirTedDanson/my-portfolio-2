@@ -8,7 +8,9 @@ function Resume() {
         <h2> Skills </h2>
       </div>
       <article className="resume">
-        <h3 className="has-text-weight-semibold is-underlined ml-5 mb-4">Front End Proficiencies</h3>
+        <h3 className="has-text-weight-semibold is-underlined ml-5 mb-4">
+          Front End Proficiencies
+        </h3>
         <ul className="ml-5">
           <li>HTML</li>
           <li>CSS</li>
@@ -19,7 +21,9 @@ function Resume() {
           <li>Bootstrap</li>
           <li>Responsive Designs</li>
         </ul>
-        <h3 className="has-text-weight-semibold is-underlined pt-5 ml-5 mb-4">Back End Proficiencies</h3>
+        <h3 className="has-text-weight-semibold is-underlined pt-5 ml-5 mb-4">
+          Back End Proficiencies
+        </h3>
         <ul className="ml-5">
           <li>APIs</li>
           <li>Node</li>

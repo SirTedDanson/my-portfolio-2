@@ -4,10 +4,10 @@ import Nav from "../Nav";
 function Header(props) {
   const { setCurrentNavItem, currentNavItem, navItems } = props;
   return (
-    <header class="hero">
-      <div class="hero-body p-0">
-        <div class="container has-text-right">
-          <p class="subtitle hero-quote">
+    <header className="hero">
+      <div className="hero-body p-0">
+        <div className="container has-text-right">
+          <p className="subtitle hero-quote">
             “We are what we repeatedly do. Excellence, then, is not an act, but
             a habit” -Aristotle
           </p>
