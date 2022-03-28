@@ -12,7 +12,7 @@
   <h1 align="center">my-portfolio-2</h1>
 
   <p align="center">
-    <a href="https://github.com/SirTedDanson/my-portfolio-2"><strong>Project Documents »</strong></a>
+    <a href="https://shrouded-fortress-84577.herokuapp.com/"><strong>Project Documents »</strong></a>
     <br />
     <br />
     <a href="https://sirteddanson.github.io/my-portfolio-2/">Application</a>
@@ -47,7 +47,7 @@ My personal developer portfolio page built with React.
 
   <br/>
   
-  [my-portfolio-2](https://sirteddanson.github.io/my-portfolio-2/)
+  [My-Portfolio]https://shrouded-fortress-84577.herokuapp.com/)
   <br/>
   <br/>
   
