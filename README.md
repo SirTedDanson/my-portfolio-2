@@ -15,7 +15,7 @@
     <a href="https://github.com/SirTedDanson/my-portfolio-2"><strong>Project Documents »</strong></a>
     <br />
     <br />
-    <a href="">Application</a>
+    <a href="https://sirteddanson.github.io/my-portfolio-2/">Application</a>
     ·
     <a href="https://github.com/SirTedDanson/my-portfolio-2/issues">Report Bug</a>
     ·
@@ -47,7 +47,7 @@ My personal developer portfolio page built with React.
 
   <br/>
   
-  [my-portfolio-2]()
+  [my-portfolio-2](https://sirteddanson.github.io/my-portfolio-2/)
   <br/>
   <br/>
   
