@@ -16,11 +16,6 @@ function About() {
               />
             </figure>
           </div>
-          <div className="media-content">
-            <h1>
-                Matthew Dwyer
-            </h1>
-          </div>
         </div>
 
         <div className="content">

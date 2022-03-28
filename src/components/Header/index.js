@@ -7,6 +7,9 @@ function Header(props) {
     <header className="hero">
       <div className="hero-body p-0">
         <div className="container has-text-right">
+          <div className="name-plate">
+            <h1>Matthew Dwyer</h1>
+          </div>
           <p className="subtitle hero-quote">
             “We are what we repeatedly do. Excellence, then, is not an act, but
             a habit” -Aristotle
