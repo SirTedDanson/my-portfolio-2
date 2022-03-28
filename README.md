@@ -61,7 +61,7 @@ My personal developer portfolio page built with React.
 
 ## Screenshot
 
-![Application Screenshot](./src/assets/readme-images/application-screenshot.PNG)
+![Application Screenshot](src/assets/readme-images/application-screenshot.png)
 
 ---
 
