@@ -47,7 +47,7 @@ My personal developer portfolio page built with React.
 
   <br/>
   
-  [my-portfolio-2](https://shrouded-fortress-84577.herokuapp.com/)
+  [My Developer Portfolio](https://shrouded-fortress-84577.herokuapp.com/)
   <br/>
   <br/>
   
