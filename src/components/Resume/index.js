@@ -34,7 +34,7 @@ function Resume() {
           <li>GraphQL</li>
         </ul>
         <div className="control pt-5">
-          <a href={Pdf} target="_blank">
+          <a href={Pdf} target="_blank" rel="noreferrer">
             <button className="button is-link" value="Open File">
               Download Resume
             </button>

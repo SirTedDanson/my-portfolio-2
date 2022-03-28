@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Nav(props) {
   const { currentNavItem, setCurrentNavItem, navItems = [] } = props;
@@ -15,7 +15,7 @@ function Nav(props) {
                 }`}
                 key={navItem.name}
               >
-                <a
+                <a href={`#${navItem.name}`}
                   onClick={() => {
                     setCurrentNavItem(navItem);
                   }}
