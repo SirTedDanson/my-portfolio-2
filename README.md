@@ -39,7 +39,7 @@
 
 ## Description
 
-My personal developer portfolio page built with React.
+My personal developer portfolio page built with React. Optimized for use on mobile devices.
 
   <p align="right">(<a href="#top">back to top</a>)</p>
 
